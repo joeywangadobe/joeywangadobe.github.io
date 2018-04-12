@@ -4,6 +4,7 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 yum localinstall -y jdk-8u161-linux-x64.rpm
 wget -O /home/azureuser/jmeter.tgz https://rawgit.com/joeyzywang/azurejmeter/master/apache-jmeter-3.3.tgz
 tar zvxf /home/azureuser/jmeter.tgz -C /home/azureuser/
+chown -R azureuser:azureuser /home/azureuser/apache-jmeter-3.3
 mv /home/azureuser/apache-jmeter-3.3/bin/jmeter /home/azureuser/apache-jmeter-3.3/bin/jmeter_bkup
 sed 's/HEAP="-Xms512m -Xmx512m"/HEAP="-Xms8000m -Xmx10000m"/' /home/azureuser/apache-jmeter-3.3/bin/jmeter_bkup > /home/azureuser/apache-jmeter-3.3/bin/jmeter
 chmod 755 /home/azureuser/apache-jmeter-3.3/bin/jmeter
