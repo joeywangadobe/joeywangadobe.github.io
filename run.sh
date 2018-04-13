@@ -8,4 +8,3 @@ chown -R azureuser:azureuser /home/azureuser/apache-jmeter-3.3
 mv /home/azureuser/apache-jmeter-3.3/bin/jmeter /home/azureuser/apache-jmeter-3.3/bin/jmeter_bkup
 sed 's/HEAP="-Xms512m -Xmx512m"/HEAP="-Xms8000m -Xmx10000m"/' /home/azureuser/apache-jmeter-3.3/bin/jmeter_bkup > /home/azureuser/apache-jmeter-3.3/bin/jmeter
 chmod 755 /home/azureuser/apache-jmeter-3.3/bin/jmeter
-/home/azureuser/apache-jmeter-3.3/bin/jmeter-server
