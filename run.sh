@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/azureuser
-yum install java-1.8.0-openjdk
+yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 wget -O /home/azureuser/jmeter.tgz https://rawgit.com/joeyzywang/azurejmeter/master/apache-jmeter-3.3.tgz
 tar zvxf /home/azureuser/jmeter.tgz -C /home/azureuser/
 chown -R azureuser:azureuser /home/azureuser/apache-jmeter-3.3
