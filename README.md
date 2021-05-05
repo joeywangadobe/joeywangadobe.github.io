@@ -1,2 +1,2 @@
 # azurejmeter
-Script to install JMeter
+Script to install JMeter v1.0
